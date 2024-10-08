@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tabler Css Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+
+    <!-- Custom Css Link -->
+    <link href="../css/output.css" rel="stylesheet" />
+  </head>
+  <body id="lock" class="font-body min-h-screen bg-blue-50">
+    <aside
+      class="h-[calc(100dvh_-_20px)] bg-zinc-400 rounded-2xl w-[280px] [.unlock_&]:w-[80px]  [.unlock_&]:hover:w-[280px] fixed top-[10px] left-[10px] z-[1599] overflow-x-hidden overflow-y-auto transition-all duration-300"
+    ></aside>
+    <main class=" w-full pl-[300px] [.unlock_&]:pl-[100px]  p-[10px] transition-all duration-300">
+      <nav
+        class="bg-zinc-400 p-2 rounded-xl sticky top-[0px] flex gap-3 justify-start items-center"
+      >
+        <div class="lock">
+          <button onclick="addClass('#lock', 'unlock')" class="bg-white p-2 rounded-lg ">
+            <i class="ti ti-lock [.unlock_&]:hidden text-[2rem] text-black"></i>
+            <i class="ti ti-lock-open hidden [.unlock_&]:block text-[2rem] text-black"></i>
+          </button>
+        </div>
+        <div class="logo">
+          <a href="#" class="text-white text-[1.7rem] font-bold">DL Logo</a>
+        </div>
+      </nav>
+    </main>
+
+    <!-- Tabler Js Cdn Link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@1.74.0/icons-react/dist/index.umd.min.js"></script>
+
+    <!-- Custom Js Link -->
+    <script src="../js/script.js"></script>
+  </body>
+</html>
